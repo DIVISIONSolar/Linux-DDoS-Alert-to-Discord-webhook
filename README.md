@@ -11,7 +11,7 @@ Step 2. Upload the "discordalerts.sh" and "discord.service"
 
 Step 3. Use an SFTP/FTP client to move "discordalerts.sh" and "discord.service" -> /root
 
-- Move the "discord.service" file to "/etc/systemd" by running "mv /root/discord.service /etc/systemd/system/discord.service"
+- Move the "discord.service" file to "/etc/systemd/system" by running "mv /root/discord.service /etc/systemd/system/discord.service"
 
 - Create a "dump" folder for the ".pcap" files, you can do this by running "mkdir /root/dumps" or "/root/<your custom directory>"
 
