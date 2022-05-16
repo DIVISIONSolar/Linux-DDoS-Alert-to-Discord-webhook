@@ -1,0 +1,15 @@
+[Unit]
+Description=Linux DDoS Alert to Discord webhook
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/bin/bash discordalerts.sh
+Restart=always
+RestartSec=1800
+
+[Install]
+WantedBy=multi-user.target
